@@ -1,0 +1,62 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Exploring - Number Object - 1</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Exploring - Number Object - 1</</</u>")
+
+var x = 10;
+var y = 20;
+var z = x + y;
+print(z); 
+
+var x = "10";
+var y = "20";
+var z = x + y;
+print(z); 
+
+var a = parseInt(x);
+var b = parseInt(y);
+var c = a + b;
+print(c);
+
+var x = "10.5";
+var y = "20.5";
+var z = x + y;
+print(z);
+var a = parseInt(x);
+var b = parseInt(y);
+var c = a + b;
+print(c);
+
+var a = parseFloat(x);
+var b = parseFloat(y);
+var c = a + b;
+print(c);
+ 
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

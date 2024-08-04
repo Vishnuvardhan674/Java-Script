@@ -1,0 +1,47 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Exploring - Number Object - 2</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Exploring - Number Object - 2</</</u>")
+
+var num1=12345.6789;
+
+print(num1.toFixed());
+print(num1.toFixed(1));
+print(num1.toFixed(2));
+print(num1.toFixed(5));
+print(num1.toFixed(6));
+print("------------------");
+
+var num2=2.34;
+print(num2.toFixed());
+print(num2.toFixed(1));
+print(num2.toFixed(2));
+
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

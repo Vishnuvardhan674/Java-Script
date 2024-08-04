@@ -1,0 +1,33 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Functions - 8</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:100px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</style>
+
+<body onload="formatTime();">
+<div id="mydata-div"> </div>
+<script>
+function formatTime() {
+var cd = new Date();
+var hh = cd.getHours();
+var mm = cd.getMinutes();
+var ss = cd.getSeconds();
+var dStr = hh + ":" + mm + ":" + ss;
+document.getElementById("mydata-div").innerHTML = dStr;
+setTimeout("formatTime()", 1000);
+}
+</script>
+</body>
+</head>
+</html>

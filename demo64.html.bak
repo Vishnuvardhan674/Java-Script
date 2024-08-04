@@ -1,0 +1,55 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS :Navigator and Histroy Object</</</title>
+<style> 
+ div{
+ margin:50px;
+ border:2px solid red;
+ width:500px;
+ height:100px;
+ front-size:25px;
+ background-color:yellow;
+ padding-left:20px;
+ padding-top:10px;
+ }
+ li{
+ list-style-type:none;
+ padding:10px
+ }
+ input{
+ front-size:20px;
+ color:blue;
+ border:2px solid red;
+ border-radius:5px;
+ padding:5px;
+ }
+</style>
+</head>
+<body>
+ <div id="my-data-div"></div>
+<script>
+ function display(data){
+ var mydiv = document.getElementById("my-data-div");
+ mydiv.innerHTML=mydiv.innerHTML+data+"</br>";
+ }
+ display("<u>Navigator Object:")
+ 
+ display("Browser:"+navigator.appName);
+ display("Browser Code:"+navigator.appCodeName);
+ display("Browser Version:"+navigator.appVersion);
+ display("PlatForm:"+navigator.platform);
+ display("Cookies Enabled:"+navigator.cookiesEnabled);
+ display("Java Enabled:"+navigator.javaEnabled);
+ display("languages:"+navigator.languages);
+ display("User Agent:"+navigator.userAgent);
+ display("Vendor:"+navigator.vendor);
+ display("Histroy Length:"+navigator.history.length);
+ 
+ 
+ 
+ 
+</script>
+</body>
+</head>
+</html>

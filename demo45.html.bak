@@ -1,0 +1,50 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Exploring - Math Object</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Exploring - Math Object</</</u>")
+
+print(Math.sqrt(25));
+print(Math.cbrt(27));
+print(Math.pow(2,2));
+
+print(Math.floor(1.567));
+print(Math.round(2.234));
+
+print(Math.max(10,20,30,40,50,));
+print(Math.min(25,23,343,12,55,1223,));
+
+print(Math.random());
+
+var rnum=Math.trunc(Math()*10);
+print(rnum);
+var rnum=Math.trunc(Math()*100);
+print(rnum);
+ 
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

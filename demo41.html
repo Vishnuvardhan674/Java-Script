@@ -1,0 +1,96 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Custom Objects - 2</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Custom Objects - 2</</</</u>")
+var cust={
+cid:101,
+cname:"Sri",
+phone:12345,
+active:true,
+emails:["sri@jlc","vas@cc"],
+address:{
+city:"bangalore",
+village:"Engineering",
+collage:"rajiv gandhi",
+state:"KA"
+},
+isCustomerActive:function(){
+return this.active;
+},
+getCity:function(){
+return this.address.city;
+},
+getState:function(){
+return this.address.state;
+},
+getVillage:function(){
+return this.address.village;
+},
+getCollage:function(){
+return this.address.collage;
+},
+getPhone:function(){
+return this.phone;
+}
+}
+console.log(cust);
+print(typeof cust);
+
+print("Way to access Object properties");
+print(cust.cid);
+print(cust.cname);
+print(cust.phone);
+print(cust.active);
+print(cust.emails[0]);
+print(cust.emails[1]);
+print(cust.address.city);
+print(cust.address.state);
+print(cust.address.village);
+print(cust.address.collage);
+print("Way to call Object functions");
+
+var x=cust.isCustomerActive();
+print(x);
+var city=cust.getCity();
+print(city);
+var ph=cust.getPhone();
+print(ph);
+var sa=cust.getState();
+print(sa);
+var vi=cust.getVillage();
+print(vi);
+var co=cust.getCollage();
+print(co);
+
+
+print("Done");
+
+ 
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

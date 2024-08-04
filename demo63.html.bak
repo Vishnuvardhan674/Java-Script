@@ -1,0 +1,81 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Window Object</</</title>
+<style> 
+ div{
+ margin:50px;
+ border:2px solid red;
+ width:500px;
+ height:100px;
+ front-size:25px;
+ background-color:yellow;
+ padding-left:20px;
+ padding-top:10px;
+ }
+ li{
+ list-style-type:none;
+ padding:10px
+ }
+ input{
+ front-size:20px;
+ color:blue;
+ border:2px solid red;
+ border-radius:5px;
+ padding:5px;
+ }
+</style>
+</head>
+<body>
+<div id="my-data-div"></div>
+<form name="myform">
+<ol>
+<li> <input type="button" value="display Alert Message" onclick="openAlert()"/</li>
+<li> <input type="button" value="display Confirmation" onclick="openConfirm()"/</li>
+<li> <input type="button" value="display Promt" onclick="openPromt()"/</li>
+<li> <input type="button" value="Open New Window" onclick="openNewWin()"/</li>
+<li> <input type="button" value="close New Window" onclick="closeNewWin()"/</li>
+<li> <input type="button" value="Print this page" onclick="printPage()"/</li>
+</ol>
+</form>
+<script>
+ function display(data){
+ var mydiv = document.getElementById("my-data-div");
+ mydiv.innerHTML=data;
+ }
+ 
+ function openAlert(){
+ window.alert("Hello Guys");
+ 
+ var x=alert("Welcome to course cube");
+ display(x);
+ }
+ 
+ function openConfirm(){
+ var result = confirm("Do you want to delete the students Rexords?");
+ if(result){
+ display("Yes , i wnat to delete");
+  }else{
+ display("NO, i don't want to delete");
+  }
+ }
+ 
+function openPromt() {
+var name = window.prompt("Enter Student Name", "Srinivas Dande");
+display(name);
+}
+ var newWin;
+ 
+ function openNewWin(){
+ newWin = window.open("demo.html","newWin")
+ }
+ function closeNewWin() {
+newWin.close();
+}
+ function printPage(){
+ self.print();
+ }
+</script>
+</body>
+</head>
+</html>

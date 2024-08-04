@@ -1,0 +1,57 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Exploring - String Object - 2</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:450px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</style>
+</head>
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+print("<u>Exploring - String Object - 2</u> ")
+
+var str="Hello Guys How are you Guys Now";
+
+var strArray = str.split(" ");
+print(strArray);
+print(strArray.length);
+print("------------------");
+
+var strArray = str.split("Guys");
+print(strArray);
+print(strArray.length);
+print("-----------------");
+print(str);
+
+var resultString = str.replace("Guys", "Students");
+print(str);
+print(resultString);
+var resultString = str.replace("H", "X");
+print(str);
+print(resultString);
+print("-----------------");
+
+var str = "Hello Guys-CourseCube";
+print(str);
+var resStr=str.substring(11);
+print(resStr);
+var resStr = str.substring(6,10);
+print(resStr);
+</script>
+</body>
+</head>
+</html>
