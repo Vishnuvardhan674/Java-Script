@@ -1,0 +1,38 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>Variable Scope</title>
+</head>
+<style>
+
+</style>
+<body>
+<div id="mydiv"></div>
+<script>
+function myprint(data){
+var mydiv=document.getElementById("mydiv");
+mydiv.innerHTML=mydiv.innerHTML+data+"<br/>";
+}
+
+myprint("<u>Variable Scope<br/></u>")
+var x=10;
+function show(){
+var y=20;
+if(true){
+var z=30;
+myprint("Inside If-x= "+x);
+myprint("Inside If-y= "+y);
+myprint("Inside If-z= "+z);
+}
+myprint("After If-x= "+x);
+myprint("After If-y= "+y);
+myprint("After If-z= "+z);
+}
+show();
+myprint("Outside show()- x= "+x);
+myprint("Outside show()- y= "+y);
+myprint("Outside show()- z = "+z);
+</script>
+
+</body>
+</html>

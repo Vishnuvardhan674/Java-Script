@@ -1,0 +1,48 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : const keyword</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid black;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  yellow;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>  const keyword</</u>")
+
+var x=10;
+print(x);
+x=20;
+print(x);
+print("------------");
+
+const y=100;
+print(y);
+print("------------");
+const arr=[10,20,30];
+print(arr);
+arr[1]=55;
+print(arr);
+print("------------");
+
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

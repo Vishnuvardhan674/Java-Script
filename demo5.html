@@ -1,0 +1,60 @@
+<!DOCKTYPE html>
+<html> <head>
+<title>
+JS updating DOM
+</title>
+<style>
+div{
+margin: 50px;
+border: 2px solid red;
+border-radius: 15px;
+width: 650px;
+font-size: 25px;
+background-color: yellow;
+padding-left: 50px;
+}
+</style>
+
+<body>
+<div id="mydiv"></div>
+ <script>
+function myprint(data){
+var mydiv=document.getElementById("mydiv");
+mydiv.innerHTML=mydiv.innerHTML+data+"<br/>";
+}
+
+myprint("<u>Data Types and Variables<br/></u>")
+
+var x=10;
+myprint(x);
+myprint(typeof(x));
+
+var y=9.8;
+myprint(y);
+myprint(typeof(y));
+
+var flag1=true;
+myprint(flag1);
+myprint(typeof(flag1));
+
+var flag2=false;
+myprint(flag2);
+myprint(typeof(flag2));
+
+var name="vishnu";
+myprint(name);
+myprint(typeof(name));
+
+var array=[9.8,20,40,28];
+myprint(array);
+myprint(typeof(array));
+
+var dob=new Date();
+myprint(dob);
+myprint(typeof(dob));
+
+</script>
+
+</body>
+</head>
+</html>

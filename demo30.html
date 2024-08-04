@@ -1,0 +1,58 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Functions - 1</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  yellow;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Exploring Functions -1</</</u>")
+
+function show(){
+var x=10;
+print(x)
+print("Hello Guys");
+console.log("I am show()");
+
+}
+show();
+var res = show();
+print(res);
+print("------------");
+
+function sum(a,b){ //2 arguments
+print("a type : "+ typeof a);
+print("b type : "+ typeof b);
+var s=a+b;
+return s;
+} 
+
+var res1=sum(10,20);
+print(res1);
+var res2=sum("10","20");
+print(res2);
+print("------------");
+
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

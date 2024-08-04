@@ -1,0 +1,55 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Functions - 2</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  yellow;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Exploring Functions -2</</</u>")
+
+var arr=[10,20,30,40,50]; //900
+function showArray(arr1){ //
+print("in func : before: "+arr1); //A
+arr1[2]=99;
+print("in func : After: "+arr1); //A
+}
+showArray(arr)
+print("out func : "+arr); //A
+
+
+print("------------");
+function sumArray(arr1){
+var sum=0;
+for(i in arr1){
+sum+=arr1[i];
+}
+return sum;
+} 
+var res=sumArray(arr);
+print(res);
+print("------------"); 
+ 
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

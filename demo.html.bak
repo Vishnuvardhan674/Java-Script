@@ -1,0 +1,54 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Exploring - Array Object - 2</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:450px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</style>
+</head>
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+print("<u>Exploring - Array Object - 2</u> ")
+var numArray=[1,2,3,4,5];
+print(numArray);
+
+result=numArray.reduce((x,y) => x+y);
+print(result);
+result=numArray.reduce((x,y) => x*y);
+print(result);
+print("-----------------------------------");
+result=numArray.reduce((x,y) => x+y ,10);
+print(result);
+result=numArray.reduce((x,y) => x*y ,10);
+print(result);
+print("-----------------------------------");
+result=numArray.reduceRight((x,y) => x+y ,0);
+print(result);
+result=numArray.reduceRight((x,y) => x*y ,1);
+print(result);
+print("-----------------------------------");
+result=numArray.reduce((x,y) => (x>y) ?x:y ,1);
+print(result);
+result=numArray.reduce((x,y) => (x<y) ?x:y ,1);
+print(result);
+print("---------------");
+print("Done");
+
+</script>
+</body>
+</head>
+</html>

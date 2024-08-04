@@ -1,0 +1,48 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>JS: Operators part 6</title>
+</head>
+<style>
+div{
+margin: 50px;
+border: 2px solid red;
+border-radius: 15px;
+width: 650px;
+font-size: 25px;
+background-color: pink;
+padding-left: 50px;
+}
+</style>
+<body>
+<div id="mydiv"></div>
+<script>
+function myprint(data){
+var mydiv=document.getElementById("mydiv");
+mydiv.innerHTML=mydiv.innerHTML+data+"<br/>";
+}
+myprint("<u>Bitwise Operators<br/></u>")
+
+var a=10;
+myprint("Less than and Greater than");
+myprint("a<<1:"+(a<<1));
+myprint("a<<2:"+(a<<2));
+myprint("a>>1:"+(a>>1));
+myprint("a>>2:"+(a>>2));
+
+var x=15;
+var y=17;
+myprint("Other relations");
+myprint("x & y : "+ (x & y));
+myprint("x | y : "+ (x | y));
+myprint("x ^ y : "+ (x ^ y));
+myprint("~x : "+ ( ~x ));
+myprint("~y : "+ ( ~y ));
+
+myprint("0101<<1 : "+ (0101<<1));
+myprint("0101>>1 : "+ (0101>>1));
+myprint("0101>>2 : "+ (0101>>2));
+ 
+</script>
+</body>
+</html>

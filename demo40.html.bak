@@ -1,0 +1,68 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Custom Objects - 1</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Custom Objects - 1</</</</u>")
+
+var cust={
+cid:101,
+cname:"vishnu",
+email:"sreeshnu@gmail.com",
+phone:1234567890
+} 
+
+console.log(cust);
+print(typeof cust);
+print("Way to access Object properties");
+print("---------------------------------");
+print(cust.cid);
+print(cust.cname);
+print(cust.email);
+print(cust.phone);
+
+print("__________________");
+print("Another Way to access Object properties");
+print(cust["cid"]);
+print(cust["cname"]);
+print(cust["email"]);
+print(cust["phone"]);
+print("_________________");
+
+print("updating object properties");
+print("---------------------------");
+cust.cname="vishnu";
+cust.phone=987654321;
+
+print("Object properties After Update");
+print(cust.cid);
+print(cust.cname);
+print(cust.email);
+print(cust.phone);
+console.log(cust); 
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

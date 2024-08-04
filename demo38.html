@@ -1,0 +1,60 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Functions - 8</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Exploring Functions -8</</</u>")
+
+var p=10;
+print("outside show : "+p);
+
+function show(){
+var p=20;
+function display1(){
+var p=30
+print("Inside display1 : "+p);
+
+function display2(){
+var p=40
+print("Inside display2 : "+p);
+}
+
+print("Inside display1 : "+p);
+display2();
+}
+
+print("Inside show : "+p);
+display1();
+print("Inside show : "+p);
+}
+
+show();
+print("outside show:"+p);
+
+print("------------"); 
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

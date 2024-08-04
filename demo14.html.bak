@@ -1,0 +1,50 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>JS: Operators part 4</title>
+</head>
+<style>
+div{
+margin: 50px;
+border: 2px solid red;
+border-radius: 15px;
+width: 650px;
+font-size: 25px;
+background-color: pink;
+padding-left: 50px;
+}
+</style>
+<body>
+<div id="mydiv"></div>
+<script>
+function myprint(data){
+var mydiv=document.getElementById("mydiv");
+mydiv.innerHTML=mydiv.innerHTML+data+"<br/>";
+}
+myprint("<u>Inrement and Decrement Operators<br/></u>")
+
+var a=10;
+myprint("Post Increment");
+myprint(a++);
+myprint(a);
+
+var a=10;
+myprint("Pree-Increment");
+myprint(++a);
+myprint(a);
+ 
+myprint("Additioncal inc and dec operators");
+//print(10++);
+myprint("Done");
+var a=5;
+myprint(a); //5
+myprint(++a); //6
+myprint(++a); //7
+myprint(a--); //7
+myprint(a++); //6
+myprint(--a); //6
+myprint(a); //6
+myprint("Done");
+</script>
+</body>
+</html>

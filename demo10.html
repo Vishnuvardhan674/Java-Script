@@ -1,0 +1,46 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>var Default Val and Constants</title>
+</head>
+<style>
+div{
+margin: 50px;
+border: 2px solid red;
+border-radius: 15px;
+width: 650px;
+font-size: 25px;
+background-color: yellow;
+padding-left: 50px;
+}
+</style>
+<body>
+<div id="mydiv"></div>
+<script>
+function myprint(data){
+var mydiv=document.getElementById("mydiv");
+mydiv.innerHTML=mydiv.innerHTML+data+"<br/>";
+}
+myprint("<u>Default Val and Constants<br/></u>")
+ var x;
+ myprint(x);
+ myprint(typeof x)
+
+var a=10;
+myprint(a);
+a=20;
+myprint(a);
+
+let b=100;
+myprint(b);
+b=200;
+myprint(b);
+const c=99;
+myprint(c);
+c=55;
+myprint(c);
+
+myprint("Done!!!")
+</script>
+</body>
+</html>

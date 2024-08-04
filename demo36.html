@@ -1,0 +1,65 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Functions - 6</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Exploring Functions -6</</</u>")
+
+function show1(){
+var x=20; //Local to show1
+print(x) //2-> 20
+{
+var x = 30; //
+print(x) //3-> 30
+}
+print(x) //4-> 30
+}
+
+var x=10;
+print(x)
+show1();
+print(x);
+print("-------");
+
+function show2(){
+var x=20;
+print(x)
+{
+let x=30;
+print(x)
+}
+}
+
+var x=20;
+print(x)
+show2();
+print(x);
+ 
+print("------------"); 
+ 
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

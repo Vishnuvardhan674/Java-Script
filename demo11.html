@@ -1,0 +1,64 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>JS: Operators part 1</title>
+</head>
+<style>
+div{
+margin: 50px;
+border: 2px solid red;
+border-radius: 15px;
+width: 650px;
+font-size: 25px;
+background-color: yellow;
+padding-left: 50px;
+}
+</style>
+<body>
+<div id="mydiv"></div>
+<script>
+function myprint(data){
+var mydiv=document.getElementById("mydiv");
+mydiv.innerHTML=mydiv.innerHTML+data+"<br/>";
+}
+myprint("<u>Arithmetic Operators<br/></u>")
+var a=5;
+var b=2;
+myprint("a=>"+a);
+myprint("b=>"+b);
+ 
+myprint("ADDITON");
+myprint("a + b=>"+(a+b));// ADDITON
+myprint("SUBTRACTION");
+myprint("a - b=>"+(a-b));// SUBTRACTION
+myprint("MULTIPLICATION");
+myprint("a * b=>"+(a*b));// MULTIPLICATION
+myprint("DIVISION");
+myprint("a % b=>"+(a%b));// DIVISION
+myprint("TO THE POWER OF A NUMBER");
+myprint("a ** b=>"+(a**b));// TO THE POWER OF A NUMBER
+myprint("RESULT IS NUMBER");
+myprint("a / b=>"+(a/b));// RESULT IS NUMBER
+
+myprint("<u>2 Assignment operators<br/></u>")
+var a=5;
+a+=2;
+myprint("a=>"+a);
+var a=5;
+a-=2;
+myprint("a=>"+a);
+var a=5;
+a*=2;
+myprint("a=>"+a);
+var a=5;
+a%=2;
+myprint("a=>"+a);
+var a=5;
+a**=2;
+myprint("a=>"+a);
+var a=5;
+a/=2;
+myprint("a=>"+a);
+</script>
+</body>
+</html>

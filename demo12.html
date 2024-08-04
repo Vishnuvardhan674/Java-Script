@@ -1,0 +1,56 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>JS: Operators part 2</title>
+</head>
+<style>
+div{
+margin: 50px;
+border: 2px solid red;
+border-radius: 15px;
+width: 650px;
+font-size: 25px;
+background-color: pink;
+padding-left: 50px;
+}
+</style>
+<body>
+<div id="mydiv"></div>
+<script>
+function myprint(data){
+var mydiv=document.getElementById("mydiv");
+mydiv.innerHTML=mydiv.innerHTML+data+"<br/>";
+}
+myprint("<u>Relational Operators<br/></u>")
+var a=10;
+myprint("Equls to");
+myprint("a=>"+a);
+myprint("a>5=>"+(a>5));
+myprint("a>10=>"+(a>10));
+myprint("a>=10=>"+(a>10));
+myprint("a<20=>"+(a>10));
+myprint("a<=20=>"+(a>10));
+
+myprint("Double equls to");
+myprint(" a==10 =>"+ (a==10) );
+myprint(" a=='10' =>"+ (a=="10") );
+myprint(" a==10.0 =>"+ (a==10.0));
+
+myprint("Triple equls to");
+myprint("a===10=>"+(a===10));
+myprint("a==='10'=>"+(a==="10"));
+myprint("a===10.0=>"+(a===10.0));
+
+myprint("Not equls to");
+myprint(" a!=10 =>"+ (a!=10) );
+myprint(" a!='10' =>"+ (a!="10") );
+myprint(" a!=10.0 =>"+ (a!=10.0));
+
+myprint("DoubleNot equls to");
+myprint(" a!==10 =>"+ (a!==10) );
+myprint(" a!=='10' =>"+ (a!=="10") );
+myprint(" a!==10.0 =>"+ (a!==10.0));
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Functions - 4</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Exploring Functions -4</</</u>")
+
+ function  sum(){
+ print("sum()")
+ var sum=0;
+ for(var i=0;i<arguments.length;i++){
+ sum+=arguments[i];
+ }
+ return sum;
+ } 
+ 
+var a1=sum();
+print(a1);
+ 
+var a2=sum(10,20);
+print(a2);
+ 
+var a3=sum(10,20,30,40);
+print(a3);
+ 
+var a4=sum(10,20,30,40,50);
+print(a4);
+ 
+print("------------"); 
+ 
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

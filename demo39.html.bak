@@ -1,0 +1,78 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS :Closures</</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  pink;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>JS: Closures</</</u>")
+
+var counter=0;
+function increment1(){
+counter++;
+}
+
+increment1();
+print("Counter:"+counter);
+increment1();
+print("Counter:"+counter);
+increment1();
+print("Counter:"+counter);
+
+print("___________");
+counter=counter+6;
+increment1();
+print("Counter:"+counter);
+print("----------");
+
+function increment2(){
+var counter=0;
+counter++;
+return counter;
+}
+print("Counter:"+increment2());
+print("Counter:"+increment2());
+print("Counter:"+increment2());
+
+var increment=(
+function(){
+var counter=0;
+console.log("Hello friends");
+return function(){
+counter++;
+return counter;
+}
+}
+)();
+print("----------");
+print("Counter :"+increment());
+print("Counter :"+increment());
+print("Counter :"+increment());
+print("Counter :"+increment());
+print("Counter :"+increment());
+print("Counter :"+increment());
+print("------------");  
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

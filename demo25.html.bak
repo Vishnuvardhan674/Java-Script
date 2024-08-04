@@ -1,0 +1,45 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title>JS: break and continue loop</title>
+</head>
+<style>
+div{
+margin: 50px;
+border: 2px solid red;
+border-radius: 15px;
+width: 650px;
+font-size: 25px;
+background-color: pink;
+padding-left: 50px;
+}
+</style>
+<body>
+<div id="mydiv"></div>
+<script>
+function myprint(data){
+var mydiv=document.getElementById("mydiv");
+console.log(mydiv);
+mydiv.innerHTML=mydiv.innerHTML+data+"<br/>";
+}
+myprint("<u>break and continue loop<br/></u>") 
+ 
+myprint("<u>break and continue loop<br/></u>") 
+ 
+for (var i = 1; i <= 5; i++) {
+myprint(i);
+if (i >= 3)
+break;
+myprint("Inside Loop");
+}
+myprint("-----------------");
+for (var i = 1; i <= 5; i++) {
+myprint(i);
+if (i >= 3)
+continue;
+myprint("Inside Loop");
+}
+ 
+</script>
+</body>
+</html>

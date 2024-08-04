@@ -1,0 +1,57 @@
+<!DOCKTYPE html>
+<html>
+<head>
+<title> JS : Arrays - 2</</title>
+<style> 
+input,h1,div{
+margin: 50px;
+border:2px solid red;
+border-radius: 10px;
+/* height: 600px;*/
+width:500px;
+font-size:25px;
+background-color:  green;
+padding-left: 20px;
+}
+</
+</style>
+
+<body>
+<div id="my-data-div"></div>
+<script>
+function print(data) {
+var mydiv=document.getElementById("my-data-div");
+mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+}
+
+print("<u>Arrays-2</u>")
+
+var arr=new Array("Hello guys");
+print(arr.length);
+print(arr );
+ 
+print("------------");
+
+var arr=new Array(5);
+print("BEfore assigning-size:"+arr.length);
+print(arr);
+ 
+arr[0]=10;
+arr[2]=99.9;
+arr[4]="Hello guys";
+arr[5]=true;
+arr[99]="ok";
+print("After assigning-size:"+arr.length);
+for(i in arr){
+print(i+":"+arr[i]);
+} 
+print("------------");
+for(var i=0;i<arr.length;i++){
+print(arr[i]);
+}
+print("------------");
+print("Done code executes sucessfully");
+</script>
+</body>
+</head>
+</html>

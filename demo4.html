@@ -1,0 +1,46 @@
+<!DOCKTYPE html>
+<html> <head>
+<title>
+JS updating DOM
+</title>
+<style>
+div,div1{
+margin: 50px;
+border: 2px solid red;
+border-radius: 15px;
+width: 500px;
+font-size: 25px;
+background-color: yellow;
+padding-left: 50px;
+}
+</style>
+
+<body>
+<div id="mydiv"></div>
+ <script>
+function myprint(data){
+var mydiv=document.getElementById("mydiv");
+mydiv.innerHTML=mydiv.innerHTML+data+"<br/>";
+}
+//print("<u>Templete design")
+
+var x=10;
+myprint(x);
+var y=20;
+myprint(y);
+var sum = x + y ;
+myprint("Sum : "+sum);
+  
+var a=20;
+myprint(a);
+var b=30;
+myprint(b);
+var multiply = a * b ;
+myprint("multiply : "+multiply);
+ 
+
+</script>
+
+</body>
+</head>
+</html>
